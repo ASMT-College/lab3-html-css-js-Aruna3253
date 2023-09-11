@@ -28,8 +28,9 @@
                 name: 'Bhandari',
                 age: 21
             }
-        ]
+        ];
         function generateTable() {
+            
             var myTable =`
               <table>
                 <tr>
@@ -40,8 +41,8 @@
                     studentList.forEach(student => {
                         myTable = myTable+`
                         <tr>
-                            <td>1</td>
-                            <td>2</td>
+                            <td>${student.name}</td>
+                            <td>${student.age}</td>
                             </tr>
                             `;
                     });
